@@ -59,7 +59,7 @@ jobs:
           response_allow_from: andabata, AurlienPierre[m], elstoc, johnny_bit, parafin
           response_timeout: 5
           message: |-
-            Showing last ${{ steps.gitlog.outputs.llc }} commit(s) to ${{ github.repository }}:
+            Showing last ${{ steps.gitlog.outputs.llc }} commit(s) to darktable-org/darktable:
             ${{ steps.gitlog.outputs.log }}
       - uses: actions/upload-artifact@v2
         with:
