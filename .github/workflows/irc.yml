@@ -55,7 +55,7 @@ jobs:
         with:
           server: "irc.oftc.net"
           channel: '#darktable'
-          nickname: dtslav2
+          nickname: dtslav
           response_allow_from: andabata, AurlienPierre[m], elstoc, johnny_bit, parafin
           response_timeout: 5
           message: |-
