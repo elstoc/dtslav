@@ -17,6 +17,7 @@ jobs:
           path: src
       - uses: dawidd6/action-download-artifact@v2
         continue-on-error: false
+        workflow-conclusion: success
         with:
           workflow: irc.yml
           name: recent_commit
