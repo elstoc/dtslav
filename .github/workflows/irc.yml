@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 200
           path: src
       - uses: dawidd6/action-download-artifact@v2
-        continue-on-error: true
+        continue-on-error: false
         with:
           workflow: irc.yml
           name: recent_commit
