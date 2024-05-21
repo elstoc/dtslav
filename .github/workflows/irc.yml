@@ -15,7 +15,7 @@ jobs:
           repository: 'darktable-org/darktable'
           fetch-depth: 200
           path: src
-      - uses: dawidd6/action-download-artifact@v2
+      - uses: dawidd6/action-download-artifact@v4
         continue-on-error: false
         with:
           workflow: irc.yml
@@ -60,7 +60,7 @@ jobs:
           message: |-
             Showing last ${{ steps.gitlog.outputs.llc }} commit(s) to darktable-org/darktable:
             ${{ steps.gitlog.outputs.log }}
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: recent_commit
           path: recent_commit
