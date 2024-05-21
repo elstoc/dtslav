@@ -15,7 +15,7 @@ jobs:
           repository: 'darktable-org/darktable'
           fetch-depth: 200
           path: src
-      - uses: dawidd6/action-download-artifact@v4
+      - uses: dawidd6/action-download-artifact@v3
         continue-on-error: false
         with:
           workflow: irc.yml
